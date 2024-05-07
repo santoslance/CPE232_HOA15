@@ -1,0 +1,12 @@
+---
+- name: Install and configure Openstack services
+  hosts: controller
+  become: true
+
+  roles:
+     - roles
+    #- neutron
+    #- horizon
+     - cinder
+
+

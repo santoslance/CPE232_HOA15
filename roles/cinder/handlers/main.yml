@@ -1,0 +1,11 @@
+---
+- name: restart cinder-api
+  service:
+    name: cinder-api
+    state: restarted
+
+- name: restart nova-api
+  service: 
+    name: nova-api
+    state: restarted
+

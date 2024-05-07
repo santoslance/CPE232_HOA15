@@ -1,0 +1,7 @@
+---
+- name: Reload Apache to apply configuration changes
+  systemd:
+    name: apache2
+    state: reloaded
+
+
